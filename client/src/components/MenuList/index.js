@@ -1,34 +1,22 @@
 import React from 'react';
 
-const MenuList = ({ thoughts, title }) => {
-// make sure to look at this in modules..
+function MenuList () {
 
+    return (
+        <div>
+            <div>
+                <h4>Add to Menu Here:</h4>
 
-    // if (!thoughts.length) {
-    //     return <h3>No items in your menu...</h3>;
-    // }
+                <input type="text" placeholder="Add food or drink here!" id="food-input"
+                    class="form-input" />
 
-    // return (
-    //     <div>
-    //         <h3>{title}</h3>
-    //         {thoughts &&
-    //             thoughts.map(thought => (
-    //                 <div key={thought._id} className="card mb-3">
-    //                     <p className='card-header'>
-    //                         {thought.username}
-    //                         thought on {thought.createdAt}
-    //                     </p>
-    //                     <div className='card-body'>
-    //                         <p>{thought.thoughtText}</p>
-    //                         <p className='mb-0'>
-    //                             Reactions: {thought.reactionCount} || Click to{' '}
-    //                             {thought.reactionCount ? 'see' : 'start '} the discussion!
-    //                         </p>
-    //                     </div>
-    //                 </div>
-    //             ))}
-    //     </div>
-    // );
+                <input type="text" placeholder="Add the price to the item!" id="search-form"
+                    class="form-input" />
+
+                <button type="submit" class="btn" id="submit-menu-item">Add item to menu!</button>
+            </div>
+        </div>
+    );
 };
 
 export default MenuList;

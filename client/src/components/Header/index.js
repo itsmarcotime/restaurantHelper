@@ -2,38 +2,47 @@ import React from 'react';
 
 function Header() {
 
-    const categories = [
-        { name: "lobby", description: "This will display table setup" },
-        { name: "menu", description: "This will display restaunts personal menu" },
-        { name: "about", description: "about the application" },
-        { name: "contact", description: "contact the creators" }
-    ];
-
-    function categorySelected(name) {
-        console.log(`${name} clicked`)
-    }
-
     return (
         <header>
             <nav>
-                <ul>
-                    <li>
-                        <a href='#lobby'>
-                            Restaunt Name goes here
-                        </a>
-                    </li>
+                <div>
 
-                    {categories.map((category) => (
-                        <li
-                            key={category.name}
-                        >
-                            <span onClick={() => categorySelected(category.name)}>
-                                {category.name}
-                            </span>
+                    <ul>
+                        <li>
+                            <h1>
+                                Restaunt Name goes here
+                            </h1>
                         </li>
-                    ))}
+                    </ul>
 
-                </ul>
+                </div>
+
+                <div>
+
+                    <ul>
+                        <li>
+                            <a href="#lobby">Tables</a>
+                        </li>
+                        <li>
+                            <a href="#menu">Menu</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div>
+
+                    <ul>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+
             </nav>
         </header>
     );
