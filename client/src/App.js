@@ -5,6 +5,7 @@ import Header from './components/Header'
 import Table from './pages/Table'
 import Menu from './pages/Menu';
 import NoMatch from './pages/NoMatch';
+import TableSetUp from './pages/TableSetUp';
 
 const httpLink = createHttpLink({
   uri: 'graphql',
@@ -32,6 +33,10 @@ function App() {
           <Route
             path="*"
             element={<NoMatch />}
+          />
+          <Route
+            path="/TableSetUp"
+            element={<TableSetUp />}
           />
         </Routes>
       </Router>

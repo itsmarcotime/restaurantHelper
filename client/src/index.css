@@ -93,3 +93,34 @@ div > div {
   color: white;
 }
 /* end of tables css */
+
+/* menu css start */
+.input-container {
+  border: black solid 3px;
+}
+
+.menu-box {
+  border: black solid 3px;
+}
+/* end menu */
+
+/* start table input css */
+.setup-container {
+  display: flex;
+  gap: 30px;
+  margin: 0 auto;
+  border: 2px solid black;
+  flex-wrap: wrap;
+}
+
+.table-box {
+  background-color: lightgray;
+  padding: 75px;
+}
+
+.full-width {
+  flex-basis: 100%;
+}
+/* end table setup */
+
+
