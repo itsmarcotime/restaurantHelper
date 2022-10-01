@@ -11,8 +11,8 @@ const typeDefs = gql`
     }
 
     type Query {
-        menu: [Menu]!
-        price(priceId: ID!): Price
+        menu(menuId: ID!):Menu
+        price(priceId: ID!):Price
     }
 `;
 
