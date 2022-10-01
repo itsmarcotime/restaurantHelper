@@ -3,53 +3,41 @@ import React from 'react';
 function TableList() {
 
     return (
-        <div>
-            <div>
+        <div className='grid'>
+            <div className='num-table'>
                 1
             </div>
             
-            <div>
+            <div className='num-table'>
                 2
             </div>
 
-            <div>
+            <div className='num-table'>
                 3
             </div>
 
-            <div>
+            <div className='num-table'>
                 4
             </div>
 
-            <div>
+            <div className='num-table'>
                 5
             </div>
 
-            <div>
+            <div className='num-table'>
                 6
             </div>
 
-            <div>
+            <div className='num-table'>
                 7
             </div>
 
-            <div>
+            <div className='num-table'>
                 8
             </div>
 
-            <div>
+            <div className='num-table'>
                 9
-            </div>
-
-            <div>
-                10
-            </div>
-
-            <div>
-                11
-            </div>
-
-            <div>
-                12
             </div>
 
         </div>

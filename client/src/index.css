@@ -69,3 +69,27 @@ code {
   outline: none;
 }
 /* end of header css */
+
+/* start of tables css*/
+.grid {
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+div > div {
+  padding: 10px;
+}
+
+.num-table {
+  margin: 50px;
+  border: green solid 3px;
+  color: green;
+  text-align: center;
+}
+
+.num-table:hover {
+  background-color: green;
+  color: white;
+}
+/* end of tables css */
