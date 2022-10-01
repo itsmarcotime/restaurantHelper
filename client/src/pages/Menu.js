@@ -4,7 +4,7 @@ import MenuList from '../components/MenuList';
 const Menu = () => {
   return (
     <div>
-        <MenuList></MenuList>
+        <MenuList />
     </div>
   );
 };

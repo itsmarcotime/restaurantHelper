@@ -1,50 +1,21 @@
 import React from 'react';
+import Navbar from '../Navbar';
 
 function Header() {
 
     return (
-        <header>
-            <nav>
-                <div>
-
-                    <ul>
-                        <li>
-                            <h1>
-                                Restaunt Name goes here
-                            </h1>
-                        </li>
-                    </ul>
-
-                </div>
-
-                <div>
-
-                    <ul>
-                        <li>
-                            <a href="#lobby">Tables</a>
-                        </li>
-                        <li>
-                            <a href="#menu">Menu</a>
-                        </li>
-                    </ul>
-
-                </div>
-
-                <div>
-
-                    <ul>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-
-                </div>
-
-            </nav>
-        </header>
+        <section className='header'>
+            <section className='more-header'>
+                <section className='header-name'>
+                    <a href="/" className='header-rest-name'>Restaurant Name</a>
+                </section>
+                <section className='header-navbar'>
+                    <Navbar />
+                </section>
+                <section className='header-bottom'>
+                </section>
+            </section>
+        </section>
     );
 }
 

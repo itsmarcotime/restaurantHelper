@@ -19,30 +19,23 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <div>
-          <Header />
-          <div>
-            <Routes>
-              <Route
-                path="/"
-                element={<Table />}
-              />
-              <Route
-                path="/Menu"
-                element={<Menu />}
-              />
-              <Route
-                path="*"
-                element={<NoMatch />}
-              />
-
-            </Routes>
-          </div>
-        </div>
+        <Header />
+        <Routes>
+          <Route
+            path="/"
+            element={<Table />}
+          />
+          <Route
+            path="/Menu"
+            element={<Menu />}
+          />
+          <Route
+            path="*"
+            element={<NoMatch />}
+          />
+        </Routes>
       </Router>
     </ApolloProvider>
-
-
   );
 }
 
