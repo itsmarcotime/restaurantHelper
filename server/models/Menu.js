@@ -2,7 +2,7 @@ const { Schema } = require('mongoose');
 
 const menuSchema = new Schema(
     {
-        menuBody: {
+        menuText: {
             type: String,
             required: true
         },
