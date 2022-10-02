@@ -1,0 +1,15 @@
+[
+    {
+        "menuText": "sandwich",
+        "menuPrice": 10
+    },
+    {
+        "menuText": "desert",
+        "menuPrice": 12
+    },
+    {
+        "menuText": "hamburger",
+        "menuPrice": 13
+    }
+
+]
