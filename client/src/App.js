@@ -33,6 +33,8 @@ function App() {
     setTheme((curr) => (curr === 'light' ? 'dark' : 'light' ));
   };
 
+  // light/dark mode from <iframe width="560" height="315" src="https://www.youtube.com/embed/VzF2iTTc0MA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
   return (
     <ApolloProvider client={client}>
       <Router>
@@ -67,7 +69,7 @@ function App() {
           />
         </Routes>
           </div>
-          <ReactSwitch onChange={toggleTheme} checked={theme === 'dark'}/>
+          <ReactSwitch className='switch' onChange={toggleTheme} checked={theme === 'dark'}/>
           </ThemeContext.Provider>
       </Router>
     </ApolloProvider>

@@ -88,6 +88,10 @@ div > div {
   text-align: center;
 }
 
+#dark {
+  color: #3a3b3c;
+}
+
 #light .num-table {
   background-color: #fff;
 }
@@ -96,7 +100,7 @@ div > div {
   background-color: green;
 }
 
-.num-table:hover {
+#light .num-table:hover {
   background-color: green;
   color: white;
 }
@@ -114,6 +118,14 @@ div > div {
 
 .menu-box {
   border: black solid 3px;
+}
+
+.switch {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
 }
 /* end menu */
 
