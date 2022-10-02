@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+#light {
+  background-color: antiquewhite;
+}
+
+#dark {
+  background-color: aquamarine;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
