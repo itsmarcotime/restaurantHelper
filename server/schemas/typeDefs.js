@@ -4,6 +4,7 @@ const typeDefs = gql`
     type Menu {
         _id: ID
         menuText: String
+        menuAuthor: String
     }
     type Price {
         _id: ID
@@ -11,8 +12,15 @@ const typeDefs = gql`
     }
 
     type Query {
-        menu(menuId: ID!):Menu
-        price(priceId: ID!):Price
+        menu(menuId: ID!): Menu
+        price(priceId: ID!): Price
+    }
+
+    type Mutation {
+        addMenu(menuText: String!, menuAuthor: String!): Menu
+        addPrice(menuId: ID!, priceId: Int!): Menu 
+        removeMenu(menuId: ID!): Menu
+        removePrice(menuId: ID!, priceId: ID!): Menu
     }
 `;
 

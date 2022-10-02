@@ -1,18 +1,18 @@
 //this will be a (user)
-const { Schema } = require('mongoose');
+const { Schema, model } = require('mongoose');
 
 const restaurantSchema = new Schema(
     {
-        restaurantBody: {
+        restaurantName: {
             type: String,
             required: true,
             unique: true
         },
-        username: {
-            type: String,
-            required: true,
-            unique: true
+        menus: [{
+            type: Schema.Types.ObjectId,
+            ref: "Menu",
         }
+        ]
     },
     {
         toJSON: {
@@ -21,4 +21,6 @@ const restaurantSchema = new Schema(
     }
 );
 
-module.exports = restaurantSchema; 
+const Restaurant= model("Restaurant", restaurantSchema)
+
+module.exports = Restaurant; 
