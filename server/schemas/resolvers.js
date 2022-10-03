@@ -1,11 +1,10 @@
-const { Menu, Restaurant } = require('../models');
-const { AuthenticationError } = require('apollo-server-express');
+const { Restaurant, Menu} = require('../models')
 
 const resolvers = {
-    
     Query: {
-        menu: async () => {
-            return Menu.find().sort({ createdAt: -1 });
+        menus: async (parent, { restaurantName }) => {
+            const params = restaurantName ? { restaurantName } : {};
+            return Menu.find(params).sort({ createdAt: -1 });
         }
     }
 };
