@@ -19,11 +19,16 @@ const Signup = () => {
   };
 
   return (
-    <main className='flex-row justify-center mb-4'>
-      <div className='col-12 col-md-6'>
-        <div className='card'>
-          <h4 className=''>Sign Up!</h4>
-          <div className=''>
+    <main className=''>
+
+      <div className='signup-container'>
+
+        <div className='signup-card'>
+
+          <h2 className='signup-text'>Sign Up!</h2>
+
+          <div className='signup-form'>
+
             <form onSubmit={handleFormSubmit}>
               <input
                 className='form-input'
@@ -45,16 +50,18 @@ const Signup = () => {
               />
               <input
                 className='form-input'
-                placeholder='******'
+                placeholder='Your password'
                 name='password'
                 type='password'
                 id='password'
                 value={formState.password}
                 onChange={handleChange}
               />
-              <button className='' type='submit'>
+
+              <button className='signup-btn' type='submit'>
                 Submit
               </button>
+
             </form>
           </div>
         </div>

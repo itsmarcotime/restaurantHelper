@@ -70,6 +70,7 @@ code {
 }
 /* end of header css */
 
+
 /* start of tables css*/
 .grid {
   display: grid;
@@ -89,7 +90,7 @@ div > div {
 }
 
 #light .num-table {
-  background-color: #fff;
+  background-color: gray;
 }
 
 #dark .num-table {
@@ -107,6 +108,7 @@ div > div {
 }
 /* end of tables css */
 
+
 /* menu css start */
 .input-container {
   border: black solid 3px;
@@ -116,6 +118,7 @@ div > div {
   border: black solid 3px;
 }
 /* end menu */
+
 
 /* start table input css */
 .setup-container {
@@ -135,3 +138,48 @@ div > div {
   flex-basis: 100%;
 }
 /* end table setup */
+
+
+/* start login css */
+.form-label,
+.form-input,
+.form-textarea {
+  display: block;
+}
+
+.login-container {
+  border: black solid 2px;
+  border-radius: 20px;
+  
+}
+
+.form-input {
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  margin-left: 350px;
+}
+
+.login-btn {
+  font-size: 1.3rem;
+  padding: 0.5rem 1.2rem;
+  margin: 5px 0;
+  border-radius: 10px;
+  border: none;
+  background-color: darkgray;
+  margin-left: 650px;
+}
+
+.login-btn:hover {
+  color: white;
+  background-color: black;
+}
+
+.login-card h2 {
+  margin-left: 675px;
+  font-weight: normal;
+}
+/* end login css */
+
