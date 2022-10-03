@@ -1,7 +1,8 @@
+/* eslint-disable no-unused-vars */
 import React, { createContext, useState } from 'react';
 import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import ContactForm from './pages/Contact';
 import ReactSwitch from 'react-switch';
 
 
@@ -12,6 +13,8 @@ import NoMatch from './pages/NoMatch';
 import TableSetUp from './pages/TableSetUp';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
+import About from './pages/About';
+import Contact from './pages/Contact'
 
 
 
@@ -64,6 +67,14 @@ function App() {
           <Route
             path="/tableSetUp"
             element={<TableSetUp />}
+          />
+          <Route
+            path="/contact"
+            element={<ContactForm />}
+          />
+          <Route
+            path="/about"
+            element={<About />}
           />
         </Routes>
           </div>
