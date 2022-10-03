@@ -176,9 +176,50 @@ div > div {
   background-color: black;
 }
 
-.login-card h2 {
+.login-card h2, h3 {
   margin-left: 675px;
   font-weight: normal;
 }
+
+.log-signup-btn {
+  font-size: 1.3rem;
+  padding: 0.5rem 1.2rem;
+  margin: 5px 0;
+  border-radius: 10px;
+  border: none;
+  background-color: darkgray;
+  margin-left: 650px;
+}
+.log-signup-btn:hover {
+  color: white;
+  background-color: black;
+}
 /* end login css */
 
+
+/* start signup css */
+.signup-container {
+  border: black solid 2px;
+  border-radius: 20px;
+}
+
+.signup-card h2 {
+  margin-left: 675px;
+  font-weight: normal;
+}
+
+.signup-btn {
+  font-size: 1.3rem;
+  padding: 0.5rem 1.2rem;
+  margin: 5px 0;
+  border-radius: 10px;
+  border: none;
+  background-color: darkgray;
+  margin-left: 660px;
+}
+
+.signup-btn:hover {
+  color: white;
+  background-color: black;
+}
+/* end sign up css */

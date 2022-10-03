@@ -60,6 +60,12 @@ const Login = (props) => {
                 Submit
               </button>
 
+              <h3> or </h3>
+
+              <button className='log-signup-btn' type='submit'>
+              <a href='/signup'>Signup!</a>
+              </button>
+
             </form>
 
           </div>

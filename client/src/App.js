@@ -46,7 +46,6 @@ function App() {
             path="/"
             element={<Table />}
           />
-          
           <Route
             path="/login"
             element={<Login />}

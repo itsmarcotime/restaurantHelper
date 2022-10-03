@@ -9,6 +9,7 @@ function Navbar () {
                 <a href="/menu" className="navbar-item">Menu</a>
                 <a href="/about" className="navbar-item">About</a>
                 <a href="/contact" className="navbar-item">Contact</a>
+                <a href="/login" className="navbar-item">Login</a>
             </section>
         </section>
     )
