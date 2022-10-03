@@ -2,7 +2,6 @@
 import React, { createContext, useState } from 'react';
 import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import ContactForm from './pages/Contact';
 import ReactSwitch from 'react-switch';
 
 
@@ -14,7 +13,7 @@ import TableSetUp from './pages/TableSetUp';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
 import About from './pages/About';
-import Contact from './pages/Contact'
+import Contact from './pages/Contact';
 
 
 
@@ -70,7 +69,7 @@ function App() {
           />
           <Route
             path="/contact"
-            element={<ContactForm />}
+            element={<Contact />}
           />
           <Route
             path="/about"
