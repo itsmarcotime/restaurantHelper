@@ -37,6 +37,7 @@ function ContactForm() {
 
   return (
     <section>
+      <div className='contact'>
       <h1 data-testid="h2tag">Contact Us</h1>
       <h3 data-testid="h1tag">123 Main Street</h3>
       <h3 data-testid="h3tag">San Antonio, Tx 78109</h3>
@@ -61,6 +62,7 @@ function ContactForm() {
         )}
         <button data-testid="button" type="submit">Submit</button>
       </form>
+      </div>
     </section>
   );
 }

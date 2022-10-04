@@ -1,3 +1,11 @@
+.root {
+  background-color: white;
+}
+
+#dark .root {
+  background-color: #404040;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -70,7 +78,6 @@ code {
 }
 /* end of header css */
 
-
 /* start of tables css*/
 .grid {
   display: grid;
@@ -93,33 +100,46 @@ div > div {
   color: #3a3b3c;
 }
 
-#light .num-table {
-  background-color: gray;
-}
-
 #dark .num-table {
-  background-color: green;
+  background-color: #8eb69b;
 }
 
 #light .num-table:hover {
-  background-color: green;
+  background-color: #8eb69b;
   color: white;
 }
 
 #dark .num-table:hover {
   background-color: #fff;
-  color: green;
+  color: #8eb69b;
 }
 /* end of tables css */
-
 
 /* menu css start */
 .input-container {
   border: black solid 3px;
 }
 
+#light .input-container {
+  border: black solid 3px;
+}
+
+#dark .input-container {
+  background-color: #8eb69b;
+  color: white;
+}
+
 .menu-box {
   border: black solid 3px;
+}
+
+#light .menu-box {
+  border: black solid 3px;
+}
+
+#dark .menu-box {
+  background-color: #8eb69b;
+  color: white;
 }
 
 .switch {
@@ -131,6 +151,24 @@ div > div {
 }
 /* end menu */
 
+/* start about us */
+#light .my-5 {
+  background-color: white;
+}
+
+#dark .my-5 {
+  background-color: #8eb69b;
+  color: white;
+}
+#light .contact {
+  background-color: white;
+}
+
+#dark .contact {
+  background-color: #8eb69b;
+  color: white;
+}
+/* end about us */
 
 /* start table input css */
 .setup-container {
@@ -151,7 +189,6 @@ div > div {
 }
 /* end table setup */
 
-
 /* start login css */
 .form-label,
 .form-input,
@@ -162,6 +199,16 @@ div > div {
 .login-container {
   border: black solid 2px;
   border-radius: 20px;
+}
+
+#light .login-card {
+  background-color: white;
+  color: black;
+}
+
+#dark .login-card {
+  background-color: #404040;
+  color: white;
 }
 
 .form-input {
@@ -179,16 +226,31 @@ div > div {
   margin: 5px 0;
   border-radius: 10px;
   border: none;
-  background-color: darkgray;
   margin-left: 650px;
 }
 
-.login-btn:hover {
+#dark .login-btn {
+  background-color: #8eb69b;
   color: white;
-  background-color: black;
 }
 
-.login-card h2, h3 {
+#light .login-btn {
+  background-color: #404040;
+  color: white;
+}
+
+#dark .login-btn:hover {
+  background-color: #b3b3b3;
+  color: #8eb69b;
+}
+
+#light .login-btn:hover {
+  background-color: #8eb69b;
+  color: white;
+}
+
+.login-card h2,
+h3 {
   margin-left: 675px;
   font-weight: normal;
 }
@@ -199,15 +261,40 @@ div > div {
   margin: 5px 0;
   border-radius: 10px;
   border: none;
-  background-color: darkgray;
+  background-color: #8eb69b;
   margin-left: 650px;
 }
+
+#dark .log-signup-btn {
+  background-color: #8eb69b;
+  color: white;
+}
+
+#light .log-signup-btn {
+  background-color: #404040;
+  color: white;
+}
+
 .log-signup-btn:hover {
   color: white;
   background-color: black;
 }
-/* end login css */
 
+#light .log-signup-btn {
+  background-color: #404040;
+  color: white;
+}
+
+#light .log-signup-btn:hover {
+  background-color: #8eb69b;
+  color: white;
+}
+
+#dark .log-signup-btn:hover {
+  background-color: #b3b3b3;
+  color: white;
+}
+/* end login css */
 
 /* start signup css */
 .signup-container {
