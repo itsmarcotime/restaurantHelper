@@ -1,8 +1,8 @@
-#light .root {
+#light .App {
   background-color: white;
 }
 
-#dark .root {
+#dark .App {
   background-color: #404040;
 }
 
@@ -235,7 +235,7 @@ div > div {
 }
 
 #light .login-btn {
-  background-color: #404040;
+  background-color: #b3b3b3;
   color: white;
 }
 
@@ -286,7 +286,12 @@ h3 {
 }
 
 #light .log-signup-btn {
-  background-color: #404040;
+  background-color: #b3b3b3;
+  color: white;
+}
+
+#light .log-signup-btn:hover {
+  background-color: #8eb69b;
   color: white;
 }
 /* end login css */
