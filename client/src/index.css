@@ -126,7 +126,7 @@ div > div {
 
 #dark .input-container {
   background-color: #8eb69b;
-  color: white;
+  color: black;
 }
 
 .menu-box {
@@ -139,7 +139,7 @@ div > div {
 
 #dark .menu-box {
   background-color: #8eb69b;
-  color: white;
+  color: black;
 }
 
 .switch {
@@ -158,7 +158,7 @@ div > div {
 
 #dark .my-5 {
   background-color: #8eb69b;
-  color: white;
+  color: black;
 }
 #light .contact {
   background-color: white;
@@ -166,7 +166,7 @@ div > div {
 
 #dark .contact {
   background-color: #8eb69b;
-  color: white;
+  color: black;
 }
 /* end about us */
 
