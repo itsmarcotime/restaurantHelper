@@ -19,6 +19,7 @@
     "dependencies": {
         "@mapbox/node-pre-gyp": "^1.0.10",
         "bcrypt": "^5.0.1",
-        "mongoose": "^6.6.3"
+        "mongoose": "^6.6.3",
+        "react-responsive": "^9.0.0"
     }
 }
