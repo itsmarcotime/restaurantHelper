@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ReactSwitch from 'react-switch';
 
 
+
 import Header from './components/Header';
 import Table from './pages/Table';
 import Menu from './pages/Menu';

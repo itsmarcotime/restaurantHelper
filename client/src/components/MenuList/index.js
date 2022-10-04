@@ -1,7 +1,11 @@
 import React from 'react';
+import {useQuery} from '@apollo/client';
+import {QUERY_MENU} from '../../utils/queries';
 
 function MenuList () {
-
+const {loading, data} = useQuery(QUERY_MENU);
+const menus = data?.menus || []
+console.log(menus);
     return (
         <div className='divbox'>
             <div className='input-container'>
@@ -18,7 +22,17 @@ function MenuList () {
 
             <div className='menu-box'>
                 <h4>Here is your menu:</h4>
-                <span id="menu-list"></span>
+
+                <span id="menu-list">
+                    {
+                        loading===false?menus.map(menu => {
+                            return (
+                                <p>{menu.menuText} - {menu.menuPrice}</p>
+                            )
+                        }):''
+                    }
+                </span>
+
             </div>
         </div>
     );

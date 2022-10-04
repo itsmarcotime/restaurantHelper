@@ -8,22 +8,7 @@ const restaurantSchema = new Schema(
             type: String,
             required: true,
             unique: true
-        },
-        email: {
-            type: String,
-            required: true,
-            unique: true,
-            match: [/.+@.+\..+/, 'Must match an email address!']
-        },
-        password: {
-            type: String,
-            required: true
-        },
-        menus: [{
-            type: Schema.Types.ObjectId,
-            ref: "Menu",
         }
-        ]
     },
     {
         toJSON: {
