@@ -4,6 +4,7 @@
 
 #dark .App {
   background-color: #404040;
+  
 }
 
 body {
@@ -97,15 +98,15 @@ div > div {
 }
 
 #dark {
-  color: #3a3b3c;
+  background-color: #3a3b3c;
 }
 
 #dark .num-table {
-  background-color: #8eb69b;
+  background-color: #6e6e6e;
 }
 
 #light .num-table:hover {
-  background-color: #8eb69b;
+  background-color: #aeaeae;
   color: white;
 }
 
@@ -323,9 +324,10 @@ h3 {
 }
 /* end sign up css */
 
-@media screen and (max-width: 768px) {
+/* responsive */
+@media screen and (min-width: 768px) {
   body,
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
