@@ -322,3 +322,10 @@ h3 {
   background-color: black;
 }
 /* end sign up css */
+
+@media screen and (max-width: 768px) {
+  body,
+  .navbar {
+    flex-direction: column;
+  }
+}
