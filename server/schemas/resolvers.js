@@ -9,8 +9,10 @@ const resolvers = {
     },
 
     Mutation: {
-        addUser: async () => {
+        addUser: async (parent, args) => {
+            const restraunt = await Restaurant.create(args);
 
+            return restraunt;
         },
         login: async () => {
 
