@@ -1,4 +1,4 @@
-.root {
+#light .root {
   background-color: white;
 }
 
@@ -207,7 +207,7 @@ div > div {
 }
 
 #dark .login-card {
-  background-color: #404040;
+  background-color: #8eb69b;
   color: white;
 }
 
@@ -230,7 +230,7 @@ div > div {
 }
 
 #dark .login-btn {
-  background-color: #8eb69b;
+  background-color: #404040;
   color: white;
 }
 
@@ -241,7 +241,7 @@ div > div {
 
 #dark .login-btn:hover {
   background-color: #b3b3b3;
-  color: #8eb69b;
+  color: white;
 }
 
 #light .login-btn:hover {
@@ -266,7 +266,12 @@ h3 {
 }
 
 #dark .log-signup-btn {
-  background-color: #8eb69b;
+  background-color: #404040;
+  color: white;
+}
+
+#dark .log-signup-btn:hover {
+  background-color: #b3b3b3;
   color: white;
 }
 
@@ -282,16 +287,6 @@ h3 {
 
 #light .log-signup-btn {
   background-color: #404040;
-  color: white;
-}
-
-#light .log-signup-btn:hover {
-  background-color: #8eb69b;
-  color: white;
-}
-
-#dark .log-signup-btn:hover {
-  background-color: #b3b3b3;
   color: white;
 }
 /* end login css */
