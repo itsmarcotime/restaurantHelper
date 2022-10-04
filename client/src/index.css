@@ -98,21 +98,22 @@ div > div {
 }
 
 #dark {
-  background-color: #3a3b3c;
+  background-color: #404040;
+  color: #ffffff
 }
 
 #dark .num-table {
-  background-color: #6e6e6e;
+  background-color: #c5c5c5;
 }
 
 #light .num-table:hover {
-  background-color: #aeaeae;
-  color: white;
+  background-color: #6b6b6b;
+  color: #000000;
 }
 
 #dark .num-table:hover {
   background-color: #fff;
-  color: #8eb69b;
+  color: #ffffff;
 }
 /* end of tables css */
 
@@ -126,8 +127,8 @@ div > div {
 }
 
 #dark .input-container {
-  background-color: #8eb69b;
-  color: black;
+  background-color: #404040;
+  color: white;
 }
 
 .menu-box {
@@ -139,8 +140,8 @@ div > div {
 }
 
 #dark .menu-box {
-  background-color: #8eb69b;
-  color: black;
+  background-color: #404040;
+  color: white;
 }
 
 .switch {
@@ -158,16 +159,16 @@ div > div {
 }
 
 #dark .my-5 {
-  background-color: #8eb69b;
-  color: black;
+  background-color: #404040;
+  color: white;
 }
 #light .contact {
   background-color: white;
 }
 
 #dark .contact {
-  background-color: #8eb69b;
-  color: black;
+  background-color: #404040;
+  color: white;
 }
 /* end about us */
 
@@ -208,7 +209,7 @@ div > div {
 }
 
 #dark .login-card {
-  background-color: #8eb69b;
+  background-color: #404040;
   color: white;
 }
 
@@ -231,22 +232,22 @@ div > div {
 }
 
 #dark .login-btn {
-  background-color: #404040;
+  background-color: black;
   color: white;
 }
 
 #light .login-btn {
-  background-color: #b3b3b3;
+  background-color: black;
   color: white;
 }
 
 #dark .login-btn:hover {
-  background-color: #b3b3b3;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 #light .login-btn:hover {
-  background-color: #8eb69b;
+  background-color: black;
   color: white;
 }
 
@@ -262,12 +263,12 @@ h3 {
   margin: 5px 0;
   border-radius: 10px;
   border: none;
-  background-color: #8eb69b;
+  background-color: #b3b3b3;
   margin-left: 650px;
 }
 
 #dark .log-signup-btn {
-  background-color: #404040;
+  background-color: #b3b3b3;
   color: white;
 }
 
