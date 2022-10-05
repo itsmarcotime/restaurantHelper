@@ -1,12 +1,25 @@
 import React from 'react';
-import {useQuery} from '@apollo/client';
+import {useQuery, useMutation} from '@apollo/client';
 import {QUERY_MENU} from '../utils/queries';
+import { UPDATE_ORDER } from '../utils/mutations';
 
 const TableSetUp = () => {
 
+    const [UpdateOrder] = useMutation(UPDATE_ORDER);
     const { loading, data } = useQuery(QUERY_MENU);
     const menus = data?.menus || []
     console.log(menus);
+
+    async function handleSubmit(id, value) {
+        
+        await UpdateOrder({
+            variables:{
+                updateOrderId:id, 
+                value:value
+            }
+        })
+        window.location.assign("/tableSetUp")
+    }
 
   return (
       <div className='setup-container'>
@@ -20,15 +33,17 @@ const TableSetUp = () => {
 
               <span id="menu-list">
                   {
-                      loading === false ? menus.map(menu => {
+                      loading === false ? menus.filter(menu => menu.isOrdered===false).map(menu => {
                           return (
-                              <p>{menu.menuText} - {menu.menuPrice}</p>
+                              <p>{menu.menuText} - {menu.menuPrice} 
+                              <button type="click" class="btn" id="add-btn" onClick={() => handleSubmit(menu._id, true) }>Add to items ordered</button>
+                              </p>
                           )
                       }) : ''
                   }
               </span>
 
-              <button type="click" class="btn" id="add-btn">Add to items ordered</button>
+              
 
           </div>
 
@@ -36,7 +51,17 @@ const TableSetUp = () => {
               Items Ordered:
 
               <div>
-                  <span id="items-added"></span>
+                  <span id="items-added">
+                  {
+                      loading === false ? menus.filter(menu => menu.isOrdered===true).map(menu => {
+                          return (
+                            <p>{menu.menuText} - {menu.menuPrice} 
+                              <button type="click" class="btn" id="add-btn" onClick={() => handleSubmit(menu._id, false) }>Add to items ordered</button>
+                              </p>
+                          ) 
+                      }) : ''
+                  }
+                  </span>
               </div>
 
               <button type="click" class="btn" id="checkout-btn">Checkout Table!</button>

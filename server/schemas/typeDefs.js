@@ -12,6 +12,7 @@ const typeDefs = gql`
         menuText: String
         menuPrice: Int
         restaurantName: String
+        isOrdered: Boolean
     }
 
     type Query {
@@ -19,6 +20,9 @@ const typeDefs = gql`
         restraunt(restaurantName: String!): Restaurant
         menus(restaurantName: String): [Menu]
         menu(_id: ID!): Menu
+    }
+    type Mutation {
+        updateOrder(id:ID!, value:Boolean): Menu
     }
 `;
 

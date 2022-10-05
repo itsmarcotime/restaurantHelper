@@ -10,6 +10,10 @@ const menuSchema = new Schema(
         menuPrice : {
             type: Number,
             required: true
+        },
+        isOrdered: {
+            type: Boolean,
+            default: false
         }
     },
     {

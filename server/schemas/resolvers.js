@@ -12,9 +12,11 @@ const resolvers = {
         }
     },
 
-    // Mutation: {
-    //     
-    // }
+    Mutation: {
+        updateOrder: async(parent, { id, value }) => {
+            return Menu.updateOne({_id:id}, {isOrdered:value}, {new:true})
+        }
+    }
 };
 
 module.exports = resolvers; 
