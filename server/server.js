@@ -24,10 +24,14 @@ app.use(express.json());
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'))
     //here  is ok
+    app.get('/api', (req, res) => {
+        res.json("{foo: BAR}")
+    });
     app.get('*', (req, res) => {
         res.sendFile(path.join(__dirname, '../client/build/index.html'))
     });
-    //not here
+   
+    //not here!!!!!!!!!!!!!!!!!!!!
 }
 
 // create a new instance of an Apollo server with the GraphQL
