@@ -1,6 +1,13 @@
 import React from 'react';
+import {useQuery} from '@apollo/client';
+import {QUERY_MENU} from '../utils/queries';
 
 const TableSetUp = () => {
+
+    const { loading, data } = useQuery(QUERY_MENU);
+    const menus = data?.menus || []
+    console.log(menus);
+
   return (
       <div className='setup-container'>
 
@@ -11,9 +18,18 @@ const TableSetUp = () => {
           <div className='table-box'>
               Restaurant Name's Menu:
 
-              <div>
-                  <span id="menu-list"></span>
-              </div>
+              <span id="menu-list">
+                  {
+                      loading === false ? menus.map(menu => {
+                          return (
+                              <p>{menu.menuText} - {menu.menuPrice}</p>
+                          )
+                      }) : ''
+                  }
+              </span>
+
+              <button type="click" class="btn" id="add-btn">Add to items ordered</button>
+
           </div>
 
           <div className='table-box'>

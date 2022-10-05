@@ -13,14 +13,7 @@ const resolvers = {
     },
 
     // Mutation: {
-    //     addMenu: async (parent, args) => {
-    //         const restraunt = await Restaurant.create(args);
-
-    //         return restraunt;
-    //     },
-    //     login: async () => {
-
-    //     }
+    //     
     // }
 };
 

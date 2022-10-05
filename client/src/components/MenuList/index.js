@@ -1,11 +1,13 @@
 import React from 'react';
-import {useQuery} from '@apollo/client';
-import {QUERY_MENU} from '../../utils/queries';
+import { useQuery } from '@apollo/client';
+import { QUERY_MENU } from '../../utils/queries';
 
-function MenuList () {
-const {loading, data} = useQuery(QUERY_MENU);
-const menus = data?.menus || []
-console.log(menus);
+function MenuList() {
+
+    const { loading, data } = useQuery(QUERY_MENU);
+    const menus = data?.menus || []
+    console.log(menus);
+
     return (
         <div className='divbox'>
             <div className='input-container'>
@@ -25,13 +27,17 @@ console.log(menus);
 
                 <span id="menu-list">
                     {
-                        loading===false?menus.map(menu => {
+                        loading === false ? menus.map(menu => {
                             return (
                                 <p>{menu.menuText} - {menu.menuPrice}</p>
                             )
-                        }):''
+                        }) : ''
                     }
                 </span>
+
+                <button type="click" class="btn" id="update-btn">Update item</button>
+
+                <button type="click" class="btn" id="remove-btn">Remove item</button>
 
             </div>
         </div>

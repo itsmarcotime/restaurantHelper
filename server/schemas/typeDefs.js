@@ -5,7 +5,6 @@ const typeDefs = gql`
     type Restaurant {
         _id: ID
         restaurantName: String
-        email: String
     }
 
     type Menu {
