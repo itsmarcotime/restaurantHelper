@@ -24,6 +24,7 @@ app.use(express.json());
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'))
     //here  is ok
+    
     app.get('/api', (req, res) => {
         res.json("{foo: BAR}")
     });
