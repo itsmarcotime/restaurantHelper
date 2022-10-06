@@ -2,6 +2,18 @@ const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
 
+    type User {
+        _id: ID
+        username: String
+        email: String
+        menus: [Menu]
+    }
+
+    type Auth {
+        token: ID!
+        user: User
+    }
+
     type Restaurant {
         _id: ID
         restaurantName: String
@@ -16,6 +28,9 @@ const typeDefs = gql`
     }
 
     type Query {
+        me: User
+        users: [User]
+        user(username: String!): User
         restaurants : [Restaurant]
         restraunt(restaurantName: String!): Restaurant
         menus(restaurantName: String): [Menu]
@@ -23,6 +38,10 @@ const typeDefs = gql`
     }
     type Mutation {
         updateOrder(id:ID!, value:Boolean): Menu
+        login(email: String!, password: String!): Auth
+        addUser(username: String!, email: String!, password: String!): Auth
+        addMenu(menuText: String!, menuPrice: Int!): Menu
+        removeMenu(id:ID!): Menu
     }
 `;
 

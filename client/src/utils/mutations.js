@@ -10,3 +10,23 @@ mutation UpdateOrder($updateOrderId: ID!, $value: Boolean) {
     }
   }
 `;
+
+export const ADD_MENU = gql`
+mutation AddMenu($menuText: String!, $menuPrice: Int!) {
+  addMenu(menuText: $menuText, menuPrice: $menuPrice) {
+    _id
+    menuText
+    menuPrice
+  }
+}
+`;
+
+export const REMOVE_MENU = gql`
+mutation RemoveMenu($removeMenuId: ID!) {
+  removeMenu(id: $removeMenuId) {
+    _id
+    menuText
+    menuPrice
+  }
+}
+`;
