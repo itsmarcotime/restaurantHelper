@@ -3,7 +3,7 @@ function About() {
   return (
     <section className="my-5">
       <div className='bio'>
-      <h1 id="about">Who We Are</h1>
+      <h2 id="about">Who We Are</h2>
       <div className="my-2">
         <p>
           Our mission is to provide restaurants and food trucks with peace of mind in managing their establishment.
