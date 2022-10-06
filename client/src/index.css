@@ -129,6 +129,7 @@ div > div {
   border: black solid 3px;
   margin-top: 40px;
   border-radius: 10px;
+  background-color: lightgrey;
 }
 
 .input-container h4 {
@@ -442,3 +443,21 @@ h3 {
     flex-direction: row;
   }
 }
+/* end responsive */
+
+
+/* start about css */
+.about-box {
+  border: #000000 solid 2px;
+  border-radius: 20px;
+  background-color: lightgray;
+}
+
+.about-box h2 {
+  margin-left: 650px;
+}
+
+.about-box p {
+  font-size: 20px;
+}
+/* end about css*/
