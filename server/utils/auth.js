@@ -10,15 +10,16 @@ module.exports = {
         return jwt.sign({ data: payload }, secret, { expiresIn: expiration });
     },
 
-    authMiddleware: function({ req }) {
-        // allows tokenn to be sent via req.body, req.query, or headers
+    authMiddleware: function ({ req }) {
+        
         let token = req.body.token || req.query.token || req.headers.authorization;
 
-        // seperates "Bearer"
+        
         if (req.headers.authorization) {
-            token = token.split(' ')
-            .pop()
-            .trim();
+            token = token
+                .split(' ')
+                .pop()
+                .trim();
         }
 
         if (!token) {
@@ -27,9 +28,11 @@ module.exports = {
 
         try {
             const { data } = jwt.verify(token, secret, { maxAge: expiration });
+            req.user = data;
         } catch {
             console.log('Invalid token');
         }
+
         return req;
     }
 };

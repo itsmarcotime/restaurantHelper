@@ -19,7 +19,7 @@ function MenuList() {
                 <input type="text" placeholder="Add the price to the item!" id="search-form"
                     class="form-input" />
 
-                <button type="submit" class="btn" id="submit-menu-item">Add item to menu!</button>
+                <button type="submit" class="btn-input" id="submit-menu-item">Add item to menu!</button>
             </div>
 
             <div className='menu-box'>
@@ -35,9 +35,9 @@ function MenuList() {
                     }
                 </span>
 
-                <button type="click" class="btn" id="update-btn">Update item</button>
+                <button type="click" class="btn-update" id="update-btn">Update item</button>
 
-                <button type="click" class="btn" id="remove-btn">Remove item</button>
+                <button type="click" class="btn-remove" id="remove-btn">Remove item</button>
 
             </div>
         </div>
