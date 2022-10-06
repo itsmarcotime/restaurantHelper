@@ -39,19 +39,13 @@ const resolvers = {
 
         addMenu: async (parent, args, context) => {
 
-            if (context.user) {
-                const menu = await Menu.create({ menuText: String, menuPrice: Int });
-
-                await User.findByIdAndUpdate(
-                    { _id: context.user._id },
-                    { $push: { thoughts: thought._id } },
-                    { new: true }
-                );
+            // if (context.user) {
+                const menu = await Menu.create(args);
 
                 return menu;
-            }
+            // }
 
-            throw new AuthenticationError('You need to be logged in!');
+            // throw new AuthenticationError('You need to be logged in!');
         },
 
         login: async (parent, { email, password }) => {
@@ -73,6 +67,10 @@ const resolvers = {
 
         updateOrder: async (parent, { id, value }) => {
             return Menu.updateOne({ _id: id }, { isOrdered: value }, { new: true })
+        },
+
+        removeMenu: async (parent, {id}) => {
+            return Menu.findOneAndDelete({_id:id});
         }
     }
 };

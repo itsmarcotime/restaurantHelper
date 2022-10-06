@@ -41,6 +41,7 @@ const typeDefs = gql`
         login(email: String!, password: String!): Auth
         addUser(username: String!, email: String!, password: String!): Auth
         addMenu(menuText: String!, menuPrice: Int!): Menu
+        removeMenu(id:ID!): Menu
     }
 `;
 
