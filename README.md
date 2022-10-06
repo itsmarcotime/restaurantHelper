@@ -2,7 +2,7 @@
 
 Our application is a simple easy to use solution that could help out a wide range of food vendors whether it be a food truck that needs help staying organized with their orders, or small restaurants who don’t want to spend big money on complex software. Our application is simple, easy to use, & FREE. We completed this appliction using MERN (Mongo, Express, React, Node). Currently our user login is going through some technical difficulties. 
 
-## This application wa created by:
+## This application was created by:
 Sara Hernandez, Yussel Panecatl, and Marco Mata
 
 ## Our Heroku deployed link:
