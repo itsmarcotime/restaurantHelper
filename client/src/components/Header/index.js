@@ -7,7 +7,7 @@ function Header() {
         <section className='header'>
             <section className='more-header'>
                 <section className='header-name'>
-                    <a href="/" className='header-rest-name'>Restaurant Name</a>
+                    <a href="/" className='header-rest-name'>Restaurant Helper</a>
                 </section>
                 <section className='header-navbar'>
                     <Navbar />

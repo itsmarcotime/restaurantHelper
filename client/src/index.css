@@ -4,7 +4,6 @@
 
 #dark .App {
   background-color: #404040;
-  
 }
 
 body {
@@ -58,9 +57,7 @@ code {
   margin-right: 55px;
 }
 
-.header-bottom {
-  flex: 1;
-}
+
 
 .navbar {
   display: flex;
@@ -95,11 +92,20 @@ div > div {
   border: green solid 3px;
   color: green;
   text-align: center;
+  border-radius: 10px;
+  background-color: lightgreen;
+  height: 50px;
+}
+
+.num-table a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
 }
 
 #dark {
   background-color: #404040;
-  color: #ffffff
+  color: lightgreen
 }
 
 #dark .num-table {
@@ -118,8 +124,48 @@ div > div {
 /* end of tables css */
 
 /* menu css start */
-.input-container {
+.input-container,
+.menu-box {
   border: black solid 3px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.input-container h4 {
+  margin-left: 600px;
+}
+
+.btn-input {
+  font-size: 1.3rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: darkgray;
+  margin-left: 600px;
+}
+
+.btn-input:hover {
+  color: white;
+  background-color: black;
+}
+
+.btn-update, .btn-remove {
+  font-size: 1.3rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: darkgray;
+  margin: 3px;
+}
+
+.btn-update:hover {
+  color: white;
+  background-color: black;
+}
+
+.btn-remove:hover {
+  color: white;
+  background-color: black;
 }
 
 #light .input-container {
@@ -177,18 +223,81 @@ div > div {
   display: flex;
   gap: 30px;
   margin: 0 auto;
-  border: 2px solid black;
   flex-wrap: wrap;
 }
 
 .table-box {
   background-color: lightgray;
   padding: 75px;
+  border: 2px solid black;
+  border-radius: 20px;
 }
 
-.full-width {
-  flex-basis: 100%;
+.return-btn {
+  font-size: 1.3rem;
+  padding: 0.5rem 1.2rem;
+  margin: 5px 0;
+  border-radius: 10px;
+  border: none;
+  background-color: darkgray;
 }
+
+.return-btn a {
+  text-decoration: none;
+  color: black;
+}
+
+.return-btn:hover {
+  color: white;
+  background-color: black;
+}
+
+.return-btn a:hover {
+  color: white;
+}
+
+.btn-menu {
+  font-size: 15px;
+  padding:10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: darkgray;
+}
+
+.btn-menu:hover {
+  color: white;
+  background-color: black;
+}
+
+.btn-ordered {
+  font-size: 15px;
+  padding:10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: darkgray;
+}
+
+.btn-ordered:hover {
+  color: white;
+  background-color: black;
+}
+
+.btn-checkout {
+  font-size: 15px;
+  padding:10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: darkgray;
+}
+
+.btn-checkout:hover {
+  color: white;
+  background-color: black;
+}
+
 /* end table setup */
 
 /* start login css */
@@ -229,6 +338,7 @@ div > div {
   border-radius: 10px;
   border: none;
   margin-left: 650px;
+  color: black
 }
 
 #dark .login-btn {
@@ -237,7 +347,7 @@ div > div {
 }
 
 #light .login-btn {
-  background-color: black;
+  background-color: darkgrey;
   color: white;
 }
 

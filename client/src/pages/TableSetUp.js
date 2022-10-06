@@ -25,18 +25,22 @@ const TableSetUp = () => {
       <div className='setup-container'>
 
           <div className='table-box full-width'>
-              <h3>Table # here</h3>
+              <h2>Table #</h2>
           </div>
 
           <div className='table-box'>
-              Restaurant Name's Menu:
+            <button type="click" class="return-btn" id="btn"><a href='/'>Return to tables</a></button>
+          </div>
+
+          <div className='table-box'>
+              <h2>Restaurant Name's Menu:</h2>
 
               <span id="menu-list">
                   {
                       loading === false ? menus.filter(menu => menu.isOrdered===false).map(menu => {
                           return (
                               <p>{menu.menuText} - {menu.menuPrice} 
-                              <button type="click" class="btn" id="add-btn" onClick={() => handleSubmit(menu._id, true) }>Add to items ordered</button>
+                              <button type="click" class="btn-menu" id="add-btn" onClick={() => handleSubmit(menu._id, true) }>Add to items ordered</button>
                               </p>
                           )
                       }) : ''
@@ -48,7 +52,7 @@ const TableSetUp = () => {
           </div>
 
           <div className='table-box'>
-              Items Ordered:
+              <h2>Items Ordered:</h2>
 
               <div>
                   <span id="items-added">
@@ -56,7 +60,7 @@ const TableSetUp = () => {
                       loading === false ? menus.filter(menu => menu.isOrdered===true).map(menu => {
                           return (
                             <p>{menu.menuText} - {menu.menuPrice} 
-                              <button type="click" class="btn" id="add-btn" onClick={() => handleSubmit(menu._id, false) }>Add to items ordered</button>
+                              <button type="click" class="btn-ordered" id="add-btn" onClick={() => handleSubmit(menu._id, false) }>Remove</button>
                               </p>
                           ) 
                       }) : ''
@@ -64,12 +68,10 @@ const TableSetUp = () => {
                   </span>
               </div>
 
-              <button type="click" class="btn" id="checkout-btn">Checkout Table!</button>
+              <button type="click" class="btn-checkout" id="checkout-btn">Checkout Table!</button>
           </div>
 
-          <div className='table-box'>
-            <button type="click" class="btn" id="checkout-btn"><a href='/'>Return to tables</a></button>
-          </div>
+         
 
 
       </div>
