@@ -39,20 +39,20 @@ function ContactForm() {
     <section>
       <div className='contact'>
       <h1 data-testid="h2tag">Contact Us</h1>
-      <h3 data-testid="h1tag">123 Main Street</h3>
-      <h3 data-testid="h3tag">San Antonio, Tx 78109</h3>
+      <h4 data-testid="h4tag">123 Main Street</h4>
+      <h4 data-testid="h4tag">San Antonio, Tx 78109</h4>
       <h4 data-testid="h4tag">(210) 555-5555</h4>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div className='Contactform'>
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name">Name:</label><br></br>
           <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
-      </div>
+      </div><br></br>
         <div>
-          <label htmlFor="email">Email address:</label>
+          <label htmlFor="email">Email address:</label><br></br>
           <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
-        </div>
+        </div><br></br>
         <div>
-          <label htmlFor="message">Message:</label>
+          <label htmlFor="message">Message:</label><br></br>
           <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
         </div>
         {errorMessage && (
